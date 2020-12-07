@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css" />
+    <title>Tic Tac Toe</title>
+  </head>
+  <body class="centerBody">
+    <div class="bodycover">
+      <h1 style="background: #0278ae; color:white; justify-content: center;" >Tic Tac Toe</h1>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">Player1 Name</span>
+        </div>
+        <input type="text" class="form-control" placeholder="@Name_Of_Player1" aria-label="NameOfPlayer1" id="p1" name="p1" aria-describedby="basic-addon1" style="color:orangered;">
+      </div>
+    <br/>
+    <span class="centerBody" style="color: yellow;"> VS </span>
+    <br/>
+    <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text" id="basic-addon1">Player2 Name</span>
+            </div>
+            <input type="text" class="form-control" placeholder="@Name_Of_Player2" aria-label="Name-Of-Player2" id="p2" name="p2" aria-describedby="basic-addon1" style="color:orangered;">
+          </div>
+    <br/>
+    <hr/>
+    <br/>
+    <span class="centerBody">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">Select The Dimension</span>
+        </div>
+        <input class="dimensions"
+        style="color: black;"
+        type="number"
+        id="size"
+        name="size" type="text" class="form-control" placeholder="@(3)Number_min" aria-label="@Number" id="p2" name="p2" aria-describedby="basic-addon1" min=3 max=100 value=3>
+      </div>
+  </span>
+    <br />
+    <br />
+    <div class="centerBody">
+    <button class="color" id="game-start" onclick="startgame()">
+      Start Game
+    </button>
+  </div>
+    <br/>
+    <div class="centerBody">
+    <div id="game-container">
+      <div id="turn"></div>
+    </div>
+  </div>
+  <div class="centerBody justify-content-center hide"id="down">
+  
+      <button
+        class="btn new-game-btn"
+        onclick="newGame()"
+        data-dismiss="modal"
+      >
+      Retry
+      </button>
+      <button class="btn new-game-btn" onclick="window.location.reload()">
+        Exit Game
+      </button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
